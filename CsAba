@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main()
+{
+    float x,y,s,dv,dt;
+    printf("Enter The Range of Voltage\n");
+    scanf("%f%f",&x,&y);
+    dv=y-x;
+    printf("Enter The Slew Rate\n");
+    scanf("%f",&s);
+    dt=dv/s;
+    printf("The Duration of Output Voltage is:%f μs",dt);
+}
